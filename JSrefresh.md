@@ -41,6 +41,15 @@ ${variable} -- inserts the variable into a string
 Use Number() to convert the strings, **which are always what is returned by the DOM**, to integers
 Use String() to do similar in reverse
 
+Finally, the last object built into JS is the window object -- this refers to the browser itself, whereas the document object we learnt about earlier, refers to the webpage
+
+window.console.log is the same as console.log
+window.alert
+
+We can avoid typing window, as JS will automatically add it in front of things such as console.log and alert.
+
+
+
 
 # Event Listeners
 
@@ -59,5 +68,6 @@ console.log('25' * 3) = outputs 75
 
 console.log('25' + 10) = outputs 2510
 
-To prevent this issue from arising, we should remember to **always convert our strings before using math operations**
+To prevent this issue from arising, we should remember to **always convert our strings before using math operations.**
+
 
