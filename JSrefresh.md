@@ -1,3 +1,7 @@
+# JSON and localStorage
+
+## JSON and localStorage are functions contained within JavaScript itself, used for compatibility and saving values through different instances of the same webapge respectively.
+
 JSON.stringify(JSObject) -- converts JS Objects into JSON strings, allowing for compatibility with various languages
 
 JSON.parse(JSON) -- converts JSON strings back to JS Objects (NOTE: It does not convert functions, so it is like a CPP struct)
