@@ -1,1 +1,1 @@
-# Collecting Money
+# E-Commerce Store Mockup
