@@ -70,4 +70,19 @@ console.log('25' + 10) = outputs 2510
 
 To prevent this issue from arising, we should remember to **always convert our strings before using math operations.**
 
+# Arrays and Loops
+
+Arrays are declared the same as C++:
+
+const myArray = [10, 20, 30];
+
+myArray.splice(startIndex, number) - **removes** elements starting at the startIndex and the number specified
+
+Loops are **exactly identical** to C++
+
+
+
+
+
+
 
