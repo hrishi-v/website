@@ -1,7 +1,9 @@
+import { useState } from "react"
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App(){
+  const [newItem, setNewItem] = useState("") // set up an array, with a value, and a function that sets up the array
   return <>
   <body className="text-center">
     <form action = "/login" class="form-signin" method = "POST">
