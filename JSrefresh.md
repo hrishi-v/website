@@ -1,6 +1,6 @@
-# JSON and localStorage
+## JSON and localStorage
 
-## JSON and localStorage are functions contained within JavaScript itself, used for compatibility and saving values through different instances of the same webpage respectively.
+### JSON and localStorage are functions contained within JavaScript itself, used for compatibility and saving values through different instances of the same webpage respectively
 
 ''JSON.stringify(JSObject)'' -- converts JS Objects into JSON strings, allowing for compatibility with various languages.
 
@@ -14,9 +14,9 @@ To get around the limitation of only supporting strings, we can use 'localStorag
 
 ''localStorage.removeItem('identifier')'' -- throws an error, avoid this with an if loop to check for null.
 
-# DOM (Document Object Model)
+## DOM (Document Object Model)
 
-## As the name suggests, this models the HTML elements as JavaScript Objects, allowing our HTML and JS to interact.
+### As the name suggests, this models the HTML elements as JavaScript Objects, allowing our HTML and JS to interact.
 
 ''document.body.innerHTML = 'hello';'' replaces the content of the body with hello.
 
@@ -46,9 +46,7 @@ Finally, the last object built into JS is the window object -- this refers to th
 We can avoid typing window, as JS will automatically add it in front of things such as console.log and alert.
 
 
-
-
-# Event Listeners
+## Event Listeners
 
 ''.addEventListener('action', create a function here)'' is preferred to all of the below, as we have more control, it allows us to add & remove multiple listeners in much more concise code.
 
@@ -60,7 +58,7 @@ onscroll - as the name suggests
 onmouseenter - hovering over
 onmouseleave - stop hovering over
 
-# JavaScript Quirks
+## JavaScript Quirks
 
 If a string **only** contains a number, when subtracting, multiplying or dividing it, JS will auto-convert it to a number.
 However, as + is multi-functional with string concatenation, it will add them as strings as shown below:
@@ -72,7 +70,7 @@ However, as + is multi-functional with string concatenation, it will add them as
 '''
 
 To prevent this issue from arising, we should remember to **always convert our strings before using math operations.**
-# Arrays and Loops
+## Arrays and Loops
 
 Arrays are declared the same as C++:
 
@@ -86,7 +84,7 @@ In a for loop, we can use **continue** inside if statements, so that the repeati
 
 **break** does the same thing as in C++.
 
-# Advanced Functions
+## Advanced Functions
 
 We can save functions as variables:
 '''
@@ -125,7 +123,7 @@ The above code would output the values in the array until there were none left.
 
 Minor difference from regular for loops, here, we use ''return;'' instead of ''continue;'' and if ''break;'' is deemed to be necessary, we should use the regular for loops.
 
-# Arrow Functions
+## Arrow Functions
 
 Like delta functions in C++, these provide a shorter way to write functions, as seen:
 
@@ -141,11 +139,13 @@ These work the same as regular functions generally, however, they have a few sho
 
 In industry, it is recommended to write arrow functions where we are passing a function as a parameter to another function, as it increases code readability.
 
-# Destructoring
+## Destructoring
 
 Destructoring is one of the most useful practices for using any front-end framework, particularly relevant with the prevalance of React, Angular and Vue in the web development workflow. 
 
-''const alphabet = ['A', 'B', 'C', 'D', 'E']''
+'''
+    const alphabet = ['A', 'B', 'C', 'D', 'E']
+'''
 
 ''const [a, b] = alphabet;'' -- this outputs A and B, but how does this work?
 
