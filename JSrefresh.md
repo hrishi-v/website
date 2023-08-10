@@ -125,6 +125,7 @@ Minor difference from regular for loops, here, we use ''return;'' instead of ''c
 
 ## Arrow Functions
 
+
 Like delta functions in C++, these provide a shorter way to write functions, as seen:
 
 ```
@@ -141,6 +142,8 @@ In industry, it is recommended to write arrow functions where we are passing a f
 
 ## Destructoring
 
+### Array Destructoring
+
 Destructoring is one of the most useful practices for using any front-end framework, particularly relevant with the prevalance of React, Angular and Vue in the web development workflow. 
 
 `const alphabet = ['A', 'B', 'C', 'D', 'E']`
@@ -153,7 +156,39 @@ To take elements in different, non-consecutive places, we can use the spread ope
 
 This philosophy can be used in function as such, which is a key way it is used in React:
 
-function sumAndMultiply
+```function sumAndMultiply (a, b){
+    return [a+b, a*b, a/b];
+}
+
+const [sum, multiply, 'No division'] = sumAndMultiply(2, 3)
+
+console.log(sum);
+console.log(multiply);
+console.log(division);
+```
+
+In the code above, the destructor will return 'No division' if only two values are in the return of the function, if `a/b` is present, it will return a result.
+
+### Object Destructoring
+
+This works similar to that of an array, but we use the following syntax:
+
+```
+const personTwo = {
+    name: 'Sally',
+    age: 32;
+}
+
+const {name : firstName, age} = personTwo
+
+console.log(name);
+console.log(age);
+
+```
+
+The `name : firstName` assigns a new property to the object personTwo, and using `console.log(firstName)` would also output Sally.
+We can also nest object destruction, if the object contains another one.
+
 
 
 
