@@ -2,17 +2,17 @@
 
 ### JSON and localStorage are functions contained within JavaScript itself, used for compatibility and saving values through different instances of the same webpage respectively
 
-''JSON.stringify(JSObject)'' -- converts JS Objects into JSON strings, allowing for compatibility with various languages.
+`JSON.stringify(JSObject)` -- converts JS Objects into JSON strings, allowing for compatibility with various languages.
 
-''JSON.parse(JSON)'' -- converts JSON strings back to JS Objects (NOTE: It does not convert functions, so it is like a CPP struct).
+`JSON.parse(JSON)` -- converts JSON strings back to JS Objects (NOTE: It does not convert functions, so it is like a CPP struct).
 
-''localStorage.setItem('identifier', 'value')'' -- this only supports strings, identifier, followed by the value.
+`localStorage.setItem('identifier', 'value')` -- this only supports strings, identifier, followed by the value.
 
-To get around the limitation of only supporting strings, we can use 'localStorage.setItem('identifier', JSON.stringify(JSObject))'.
+To get around the limitation of only supporting strings, we can use `localStorage.setItem('identifier', JSON.stringify(JSObject))`.
 
-''localStorage.getItem('identifier')''
+`localStorage.getItem('identifier')`
 
-''localStorage.removeItem('identifier')'' -- throws an error, avoid this with an if loop to check for null.
+`localStorage.removeItem('identifier')` -- throws an error, avoid this with an if loop to check for null.
 
 ## DOM (Document Object Model)
 
