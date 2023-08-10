@@ -18,7 +18,7 @@ To get around the limitation of only supporting strings, we can use `localStorag
 
 ### As the name suggests, this models the HTML elements as JavaScript Objects, allowing our HTML and JS to interact.
 
-''document.body.innerHTML = 'hello';'' replaces the content of the body with hello.
+`document.body.innerHTML = 'hello';`` replaces the content of the body with hello.
 
 -- the document object models the webpage (the DOM).
 
@@ -28,13 +28,13 @@ The HTML element is converted to a JS Object when referred to as such.
 
 **Methods: methods are function stored inside an object**
 
-''document.querySelector()'' is a method, allowing use to take anything from HTML and put it inside our JS.
+`document.querySelector()` is a method, allowing use to take anything from HTML and put it inside our JS.
 
-If we added innerHTML to this, like so: ''document.querySelector('button').innerHTML'' --  it would return the text inside the first button on the HTML webpage.
+If we added innerHTML to this, like so: `document.querySelector('button').innerHTML` --  it would return the text inside the first button on the HTML webpage.
 
 We can specify which button by assigning the button a class in HTML, then starting our querySelector input with a period, which searches for classes.
 
-We are able to take the input from a input box in HTML by using ''.value'' and use it in our JS code :O
+We are able to take the input from a input box in HTML by using `.value` and use it in our JS code :O
 
 ${variable} -- inserts the variable into a string.
 
@@ -48,7 +48,7 @@ We can avoid typing window, as JS will automatically add it in front of things s
 
 ## Event Listeners
 
-''.addEventListener('action', create a function here)'' is preferred to all of the below, as we have more control, it allows us to add & remove multiple listeners in much more concise code.
+`.addEventListener('action', create a function here)` is preferred to all of the below, as we have more control, it allows us to add & remove multiple listeners in much more concise code.
 
 **NOTE:** If the call to the function is given, instead a function itself, it leads to undefined behaviour when the action occurs.
 
@@ -63,20 +63,20 @@ onmouseleave - stop hovering over
 If a string **only** contains a number, when subtracting, multiplying or dividing it, JS will auto-convert it to a number.
 However, as + is multi-functional with string concatenation, it will add them as strings as shown below:
 
-'''
+```
     console.log('25' * 3) = outputs 75
 
     console.log('25' + 10) = outputs 2510
-'''
+```
 
 To prevent this issue from arising, we should remember to **always convert our strings before using math operations.**
 ## Arrays and Loops
 
 Arrays are declared the same as C++:
 
-''const myArray = [10, 20, 30];''
+`const myArray = [10, 20, 30];`
 
-''myArray.splice(startIndex, number)'' - **removes** elements starting at the startIndex and the number specified.
+`myArray.splice(startIndex, number)` - **removes** elements starting at the startIndex and the number specified.
 
 Loops are **exactly identical** to C++, aside from a few minor language differences.
 
@@ -87,10 +87,10 @@ In a for loop, we can use **continue** inside if statements, so that the repeati
 ## Advanced Functions
 
 We can save functions as variables:
-'''
+```
     const function1 = function greeting() {
     }
-'''
+```
 Due to this, in the instance above, we do not actually need the name 'greeting' instead just calling the function through the variable, ''function1()''.
 
 A function written as such is known as an 'anonymous function'. A key difference between saving a function in a variable versus giving it it's own name is that
@@ -108,7 +108,7 @@ so we can use ''let idInterval = setInterval()'' then ''clearInterval(idInterval
 
 We are able to use the method of an array - ''.forEach()'' to loop through it, as shown.
 
-'''
+```
     let myArray = [
                 'make dinner',
                 'wash dishes',
@@ -117,7 +117,7 @@ We are able to use the method of an array - ''.forEach()'' to loop through it, a
                 ].forEach(function(value, index)) {
                     console.log(value);
                 }
-'''
+```
 
 The above code would output the values in the array until there were none left.
 
@@ -127,11 +127,11 @@ Minor difference from regular for loops, here, we use ''return;'' instead of ''c
 
 Like delta functions in C++, these provide a shorter way to write functions, as seen:
 
-'''
+```
     const arrowFunction = (param1, param2) => {
         console.log('hello);
     }
-'''
+```
 
 These work the same as regular functions generally, however, they have a few shortcuts, for example, when an arrow function has only **one parameter**, the regular brackets around them are optional, so we are able to remove them. Similarly, if the arrow function only has one line, we can remove the curly braces as well as the return keyword and write the code to be run inline, as shown below:
 
@@ -143,11 +143,9 @@ In industry, it is recommended to write arrow functions where we are passing a f
 
 Destructoring is one of the most useful practices for using any front-end framework, particularly relevant with the prevalance of React, Angular and Vue in the web development workflow. 
 
-'''
-    const alphabet = ['A', 'B', 'C', 'D', 'E']
-'''
+`const alphabet = ['A', 'B', 'C', 'D', 'E']`
 
-''const [a, b] = alphabet;'' -- this outputs A and B, but how does this work?
+`const [a, b] = alphabet;` -- this outputs A and B, but how does this work?
 
 The element, an array "alphabet" in this case we want to destruct is on the right hand side in this case, and the variables we want to store into on the left.
 As a and b are in the first and second positions, we take the first and second element in the array.
