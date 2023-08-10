@@ -68,7 +68,7 @@ console.log('25' * 3) = outputs 75
 
 console.log('25' + 10) = outputs 2510
 
-To prevent this issue from arising, we should remember to **always convert our strings before using math operations.**
+To prevent this issue from arising, we should remember to **always convert our strings before using math operations**
 
 # Arrays and Loops
 
@@ -79,6 +79,23 @@ const myArray = [10, 20, 30];
 myArray.splice(startIndex, number) - **removes** elements starting at the startIndex and the number specified
 
 Loops are **exactly identical** to C++
+
+# Advanced Functions
+
+We can save functions as variables:
+
+const function1 = function greeting() {
+}
+
+Due to this, in the instance above, we do not actually need the name 'greeting' instead just calling the function through the variable, 'function1()'
+
+A function written as such is known as an 'anonymous function'. A key difference between saving a function in a variable versus giving it it's own name is that
+we are not able to 'hoist' it, that is, to call it before we instantiate it in the code, whereas functions written in the traditional method can be
+
+As functions are seen as values in JavaScript, they can be stored inside objects, like member functions in C++, but here they are known as 'methods'
+By the same virtue, we can pass functions into functions; the child function called by the parent, is known as a **callback function**
+
+For all these advanced functions, we can use a built-in function known as setTimeout(function to be run in the future, how long to wait before running aforementioned function)
 
 
 
