@@ -1,8 +1,8 @@
 - Catalogue Page
 - Landing Page 
 - Individual Items
-- Register 
-- Login 
+- Register [keep as a whole webpage]
+- Login [want to be able to access from a popup in the navbar]
 - Payment Page / Checkout Page
 - Limited Drop (Secret Code) Page
 - Basket Page
