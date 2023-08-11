@@ -1,0 +1,15 @@
+- Catalogue Page
+- Landing Page 
+- Individual Items
+- Register 
+- Login 
+- Payment Page / Checkout Page
+- Limited Drop (Secret Code) Page
+- Basket Page
+- Filter Items
+- Search Feature
+---------
+- Ability to add items
+- Reviews 
+-----------
+- Delivery Options
