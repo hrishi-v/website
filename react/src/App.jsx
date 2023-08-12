@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Results from "./pages/Results";
-import Login from "./pages/login";
-import Register from "./pages/register";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <BrowserRouter>
         <Routes>
           <Route index element={<Landing />} />

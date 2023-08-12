@@ -1,9 +1,9 @@
-import Header from "../components/Header";
+import Landing_NB from "../components/Landing_NB";
 
 export default function Landing() {
   return (
     <>
-      <Header />
+      <Landing_NB />
     </>
   );
 }
