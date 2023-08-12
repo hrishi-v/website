@@ -1,9 +1,13 @@
-import Landing_NB from "../components/Landing_NB";
+import UniversalNavBar from "../components/UniversalNavBar";
+import helmet from "react-helmet";
 
 export default function Landing() {
   return (
     <>
-      <Landing_NB />
+      <helmet>
+        <title>Hello</title>
+      </helmet>
+      <UniversalNavBar />
     </>
   );
 }

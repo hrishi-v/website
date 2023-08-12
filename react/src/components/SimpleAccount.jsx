@@ -10,7 +10,7 @@ export default function SimpleAccount() {
         <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/Profile">Your Profile</NavDropdown.Item>
-        <NavDropdown.Item href="/Login">Saved Items</NavDropdown.Item>
+        <NavDropdown.Item href="/Liked">Liked Items</NavDropdown.Item>
       </NavDropdown>
     </div>
   );
