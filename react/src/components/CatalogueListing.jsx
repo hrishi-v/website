@@ -16,8 +16,11 @@ import { useState } from "react";
 export default function CatalogueListing() {
   return (
     <>
-      <div className="product-img">
-        <img src="https://images.asos-media.com/products/nike-all-over-logo-bandana-in-white/204134625-1-white?$n_320w$&wid=317&fit=constrain"></img>
+      <div className="product-img-div">
+        <img
+          className="responsive"
+          src="https://images.asos-media.com/products/nike-all-over-logo-bandana-in-white/204134625-1-white?$n_640w$&wid=513&fit=constrain"
+        ></img>
         <div className="options">
           <Button bsPrefix="del-btn">
             <img
@@ -40,5 +43,3 @@ export default function CatalogueListing() {
     </>
   );
 }
-
-const Info = () => {};

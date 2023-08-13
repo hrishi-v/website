@@ -6,15 +6,16 @@ import {
   Button,
   Form,
 } from "react-bootstrap";
+import "./UniversalNavBar.css";
+import { ShoppingBagOpen, ShoppingCart } from "phosphor-react";
 
 export default function UniversalNavBar() {
   return (
     <>
       <Navbar
-        bsPrefix="navbar"
         className="bg-body-tertiary justify-content-between"
         data-bs-theme="dark"
-        bg="dark"
+        bg="myBlue"
         expand="lg"
       >
         <Container>
@@ -33,6 +34,9 @@ export default function UniversalNavBar() {
                   placeholder="Search..."
                 ></textarea>
               </Form>
+              <Nav.Link href="/Basket">
+                <ShoppingCart size={30}></ShoppingCart>
+              </Nav.Link>
               <NavDropdown className="me-2 justify-content-end" title="Account">
                 <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="/Register">Register</NavDropdown.Item>

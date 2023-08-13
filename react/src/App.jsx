@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./pages/Landing";
-import Profile from "./pages/Profile";
-import Liked from "./pages/Liked";
+import Landing from "./pages/Landing/Landing";
+import Profile from "./pages/Profile/Profile";
+import Liked from "./pages/Liked/Liked";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import { Helmet } from "react-helmet";
