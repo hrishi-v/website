@@ -1,10 +1,10 @@
 import CatalogueListing from "../../components/CatalogueListing";
-import Navbar from "../../components/UniversalNavBar";
+import UniversalNavBar from "../../components/UniversalNavBar";
 
 export default function Liked() {
   return (
     <>
-      <Navbar />
+      <UniversalNavBar />
       <h1 className="category">Liked Items</h1>
       <div className="listing">
         <CatalogueListing />

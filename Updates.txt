@@ -9,4 +9,9 @@ Developing the Register and Login webpages::
 
 This was the first hiccup that I came across, wherein I was experimenting with the React Router module, where I was aiming to make the 
 Register button redirect me to the Login page - a very primitive task, with no actual checks for password length, valid emails etc.
-Wrapping the root.render in the main.jsx file, would cause the Login page to disappear, need a method to select a landing page.
+Wrapping the root.render in the main.jsx file, would cause the Login page to disappear, need a method to select a landing page. I
+resolved  this by utilising the React Router library and assigning paths to each webpage created.
+
+The next major dilemma I had was whether or not to use the Navbar from the React Bootstrap library. At first, I developed the webpages with the Navbar,
+but found that it was restrictive in regards to appearance and customizability, so I moved to a navbar constructed from scratch HTML and CSS, allowing
+for more creative control, as well as an opportunity to learn HTML and CSS concepts. 
