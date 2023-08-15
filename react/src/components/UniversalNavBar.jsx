@@ -27,14 +27,14 @@ export default function UniversalNavBar() {
             <Nav>
               <Nav.Link href="/Tshirts">T-Shirts</Nav.Link>
               <Nav.Link href="/Hoodies">Hoodies and Outerwear</Nav.Link>
-              <Form inline>
+              <Form>
                 <textarea
                   type="search"
                   className="search"
                   placeholder="Search..."
                 ></textarea>
               </Form>
-              <Nav.Link href="/Basket">
+              <Nav.Link href="/Cart">
                 <ShoppingCart size={30}></ShoppingCart>
               </Nav.Link>
               <NavDropdown className="me-2 justify-content-end" title="Account">
