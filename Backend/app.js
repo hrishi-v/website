@@ -8,9 +8,7 @@ const session = require("express-session");
 const MySQLStore = require("express-mysql-session")(session); 
 const ejs = require("ejs");
 
-
 const app = express();  
-
 
 app.use(session({
     key: "session_cookie_name", 
