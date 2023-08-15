@@ -1,5 +1,6 @@
-import CatalogueListing from "../../components/CatalogueListing";
+/*import React from "react";
 import UniversalNavBar from "../../components/UniversalNavBar";
+import CatalogueListing from "../../components/CatalogueListing";
 
 export default function Liked() {
   return (
@@ -14,4 +15,4 @@ export default function Liked() {
       </div>
     </>
   );
-}
+}*/
