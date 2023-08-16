@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import UniversalNavBar from "../../components/UniversalNavBar";
 import CatalogueListing from "../../components/CatalogueListing";
 
@@ -15,4 +15,4 @@ export default function Liked() {
       </div>
     </>
   );
-}*/
+}

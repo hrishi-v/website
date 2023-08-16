@@ -12,6 +12,7 @@ add a function to take parameters, and change price, title, and catalogue images
 */
 import { Button } from "react-bootstrap";
 import { useState } from "react";
+import { ShopContext } from "../shop-context";
 
 export default function CatalogueListing() {
   return (
