@@ -3,9 +3,9 @@
 - Individual Items
 - Register [keep as a whole webpage]
 - Login [want to be able to access from a popup in the navbar]
+- Basket Page
 - Payment Page / Checkout Page
 - Limited Drop (Secret Code) Page
-- Basket Page
 - Filter Items
 - Search Feature
 ---------

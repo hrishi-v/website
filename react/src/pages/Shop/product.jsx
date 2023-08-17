@@ -25,10 +25,8 @@ add a function to take parameters, and change price, title, and catalogue images
           </Button>
 
 */
-import { Button } from "react-bootstrap";
-import { useState } from "react";
 import React, { useContext } from "react";
-import { ShopContext } from "../../components/shop-context";
+import { ShopContext } from "../../shop-context";
 
 export const Product = (props) => {
   const { id, productName, price, productImage } = props.data;
@@ -46,7 +44,7 @@ export const Product = (props) => {
         <p>${price}</p>
       </div>
       <button className="addToCartBttn" onClick={() => addToCart(id)}>
-        Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}{" "}
+        Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
       </button>
     </div>
   );

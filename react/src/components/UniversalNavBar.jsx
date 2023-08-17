@@ -27,7 +27,7 @@ export default function UniversalNavBar() {
             <Nav>
               <Nav.Link href="/Tshirts">T-Shirts</Nav.Link>
               <Nav.Link href="/Hoodies">Hoodies and Outerwear</Nav.Link>
-              <Form>
+              <Form id="searchbar">
                 <textarea
                   type="search"
                   className="search"

@@ -41,7 +41,7 @@ export const CatalogueListing = () => {
             <img
               className="addimg"
               src="https://icons.veryicon.com/png/o/miscellaneous/o2o-middle-school-project/plus-104.png"
-            />{" "}
+            />
             {cartItemCount > 0 && <>({cartItemCount})</>}
           </button>
         </div>

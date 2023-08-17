@@ -1,8 +1,9 @@
-import UniversalNavBar from "../../components/UniversalNavBar";
 import React from "react";
-import CatalogueListing from "../../components/CatalogueListing";
+import { Product } from "./product";
 import { PRODUCTS } from "../../products";
+import UniversalNavBar from "../../components/UniversalNavBar";
 
+import "./Shop.css";
 export const Shop = () => {
   return (
     <>
@@ -14,7 +15,7 @@ export const Shop = () => {
 
         <div className="products">
           {PRODUCTS.map((product) => (
-            <CatalogueListing data={product} />
+            <Product data={product} key={product.id} />
           ))}
         </div>
       </div>
