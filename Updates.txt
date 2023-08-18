@@ -1,11 +1,11 @@
-JavaScript resource::
+JavaScript resource:
 
 To best simulate a industry-standard development workflow, we are using a GitHub repository to both keep each other updated on progress, 
 and staying motivated. In addition to this, I have created a Markdown file including important syntax and techniques to employ in JavaScript, 
 as a mean to refresh myself before moving onto learning React. This is something that I can share once the project is more fleshed out, 
 in a future post.
 
-Developing the Register and Login webpages::
+Developing the Register and Login webpages:
 
 This was the first hiccup that I came across, wherein I was experimenting with the React Router module, where I was aiming to make the 
 Register button redirect me to the Login page - a very primitive task, with no actual checks for password length, valid emails etc.
