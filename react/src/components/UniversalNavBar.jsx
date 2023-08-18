@@ -7,7 +7,7 @@ import {
   Form,
 } from "react-bootstrap";
 import "./UniversalNavBar.css";
-import { ShoppingBagOpen, ShoppingCart } from "phosphor-react";
+import { ShoppingCart } from "phosphor-react";
 
 export default function UniversalNavBar() {
   return (

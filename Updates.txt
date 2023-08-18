@@ -15,3 +15,7 @@ resolved  this by utilising the React Router library and assigning paths to each
 The next major dilemma I had was whether or not to use the Navbar from the React Bootstrap library. At first, I developed the webpages with the Navbar,
 but found that it was restrictive in regards to appearance and customizability, so I moved to a navbar constructed from scratch HTML and CSS, allowing
 for more creative control, as well as an opportunity to learn HTML and CSS concepts. 
+
+Shop vs Cart:
+
+When items are added to the cart from the shop, the array of cart items wa

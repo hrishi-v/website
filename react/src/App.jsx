@@ -3,12 +3,12 @@ import { Shop } from "./pages/Shop/Shop";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import { Cart } from "./pages/Cart/Cart";
-import { ShopContextProvider } from "./shop-context";
+import { ShopContextProvider } from "../src/context/shop-context";
 import UniversalNavBar from "./components/UniversalNavBar";
 
 export default function App() {
   return (
-    <div className="container">
+    <div className="App">
       <ShopContextProvider>
         <Router>
           <UniversalNavBar />

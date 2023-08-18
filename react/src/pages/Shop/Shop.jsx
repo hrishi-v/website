@@ -12,7 +12,7 @@ export const Shop = () => {
 
       <div className="products">
         {PRODUCTS.map((product) => (
-          <Product data={product} key={product.id} />
+          <Product data={product} />
         ))}
       </div>
     </div>

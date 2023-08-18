@@ -26,11 +26,12 @@ add a function to take parameters, and change price, title, and catalogue images
 
 */
 import React, { useContext } from "react";
-import { ShopContext } from "../../shop-context";
+import { ShopContext } from "../../context/shop-context";
 
 export const Product = (props) => {
   const { id, productName, price, productImage } = props.data;
   const { addToCart, cartItems } = useContext(ShopContext);
+  console.log(cartItems);
 
   const cartItemCount = cartItems[id];
 

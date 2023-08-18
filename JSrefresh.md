@@ -84,6 +84,24 @@ In a for loop, we can use **continue** inside if statements, so that the repeati
 
 **break** does the same thing as in C++.
 
+## Switch Statements
+
+Switch statements are used to match one value against many options, as an alternative to if else chains. See the example below:
+
+```
+switch (fruit){
+    case "apple:
+        console.log("The fruit is an apple");
+        break;
+    case "orange":
+        console.log("The fruit is an orange");
+        break;
+}
+```
+The break keyword as mentioned before will stop the switch statement at the position in which it is used, and only output the corresponding text to the console.
+
+Additionally, the keyword default can be used instead of the `case value:` syntax, to give a statement if no matching case statement is found.
+
 ## Advanced Functions
 
 We can save functions as variables:

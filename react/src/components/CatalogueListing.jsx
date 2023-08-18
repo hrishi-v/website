@@ -9,7 +9,7 @@ price listing
 HTML DONE
 
 add a function to take parameters, and change price, title, and catalogue images
-*/
+
 import { Button } from "react-bootstrap";
 import { ShopContext } from "../shop-context";
 import React, { useContext } from "react";
@@ -49,3 +49,4 @@ export const CatalogueListing = () => {
     </>
   );
 };
+*/
