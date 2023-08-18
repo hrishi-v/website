@@ -26,4 +26,12 @@
     color: white;
 }
 
+.links {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
 
+#cart{
+    color: white;
+}

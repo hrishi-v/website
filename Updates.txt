@@ -16,6 +16,13 @@ The next major dilemma I had was whether or not to use the Navbar from the React
 but found that it was restrictive in regards to appearance and customizability, so I moved to a navbar constructed from scratch HTML and CSS, allowing
 for more creative control, as well as an opportunity to learn HTML and CSS concepts. 
 
-Shop vs Cart:
+Shop to Cart:
 
-When items are added to the cart from the shop, the array of cart items wa
+When items are added to the cart from the shop, the array of cart items was updated by the product component, and it was received by the shop context as well,
+but was not reflecting into the cart component when displayed on the website, the fix for this took the longest amount of time to rectify. The fix for this was seemingly
+unrelated, I was using the React Bootstrap library for the navbar, and using Nav.Link for the links from Cart to Shop, and that was causing the router to reset the 
+cart contents everytime the page was switched, I will do more research on this to gain a better understanding of it, but for now, switching from using Nav.Link from React
+Bootstrap to Link from the React Router DOM library has resolved the issue.
+
+Early prediction is that because the navigation between the pages was done through the Router, and the Navbar was not using that library, they weren't interacting how they
+should be.

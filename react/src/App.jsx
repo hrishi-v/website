@@ -5,13 +5,14 @@ import Register from "./components/Register";
 import { Cart } from "./pages/Cart/Cart";
 import { ShopContextProvider } from "../src/context/shop-context";
 import UniversalNavBar from "./components/UniversalNavBar";
+import { NavbarV2 } from "./components/NavbarV2";
 
 export default function App() {
   return (
-    <div className="App">
-      <ShopContextProvider>
+    <ShopContextProvider>
+      <div className="App">
         <Router>
-          <UniversalNavBar />
+          <NavbarV2 />
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route path="/Cart" element={<Cart />} />
@@ -19,7 +20,7 @@ export default function App() {
             <Route path="/Register" element={<Register />} />
           </Routes>
         </Router>
-      </ShopContextProvider>
-    </div>
+      </div>
+    </ShopContextProvider>
   );
 }

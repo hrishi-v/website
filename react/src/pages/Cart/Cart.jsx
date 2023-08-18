@@ -7,10 +7,10 @@ import { ShopContext } from "../../context/shop-context";
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
+  console.log(cartItems);
 
   const navigate = useNavigate();
 
-  console.log(cartItems);
   return (
     <div className="cart">
       <div>
@@ -19,28 +19,25 @@ export const Cart = () => {
       <div className="cart">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
+            // this is the line that needs modifying, if I increment in the cart, the cartitem is displayed
+            return <CartItem data={product} key={product.id} />;
           }
         })}
       </div>
 
-      {totalAmount > 0 ? (
-        <div className="checkout">
-          <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => navigate("/")}> Continue Shopping </button>
-          <button
-            onClick={() => {
-              checkout();
-              navigate("/Checkout");
-            }}
-          >
-            {" "}
-            Checkout{" "}
-          </button>
-        </div>
-      ) : (
-        <h1> Your Shopping Cart is Empty</h1>
-      )}
+      <div className="checkout">
+        <p> Subtotal: ${totalAmount} </p>
+        <button onClick={() => navigate("/")}> Continue Shopping </button>
+        <button
+          onClick={() => {
+            checkout();
+            navigate("/Checkout");
+          }}
+        >
+          {" "}
+          Checkout{" "}
+        </button>
+      </div>
     </div>
   );
 };

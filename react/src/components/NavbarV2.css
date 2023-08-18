@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: lightgray;
+    font-family: monospace;
+}
+
+nav{
+    background-color: #404040;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.small-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#title{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}

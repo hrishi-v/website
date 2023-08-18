@@ -7,6 +7,7 @@ import {
   Form,
 } from "react-bootstrap";
 import "./UniversalNavBar.css";
+import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
 
 export default function UniversalNavBar() {
@@ -24,19 +25,24 @@ export default function UniversalNavBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
-              <Nav.Link href="/Tshirts">T-Shirts</Nav.Link>
-              <Nav.Link href="/Hoodies">Hoodies and Outerwear</Nav.Link>
-              <Form id="searchbar">
+            <Nav className="">
+              <Link className="links" to="/Tshirts">
+                T-Shirts
+              </Link>
+              <Link className="links" to="/Hoodies">
+                Hoodies and Outerwear
+              </Link>
+              <Form name="searchbar">
                 <textarea
                   type="search"
                   className="search"
+                  id="searchbar"
                   placeholder="Search..."
                 ></textarea>
               </Form>
-              <Nav.Link href="/Cart">
+              <Link id="cart" to="/Cart">
                 <ShoppingCart size={30}></ShoppingCart>
-              </Nav.Link>
+              </Link>
               <NavDropdown className="me-2 justify-content-end" title="Account">
                 <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
