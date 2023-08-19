@@ -1,11 +1,12 @@
 import product1 from "./assets/products/1.png";
 import product2 from "./assets/products/2.png";
 import product3 from "./assets/products/3.png";
+import product4 from "./assets/products/4.png";
 
 export const PRODUCTS = [
   {
     id: 1,
-    productName: "IPhone",
+    productName: "iPhone",
     price: 999.0,
     productImage: product1,
   },
@@ -21,4 +22,10 @@ export const PRODUCTS = [
     price: 699.0,
     productImage: product3,
   },
+  {
+    id: 4,
+    productName: "Children",
+    price: 2.0,
+    productImage: product4,
+  }
 ];

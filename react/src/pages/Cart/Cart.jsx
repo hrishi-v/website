@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { CartItem } from "./Cart-Item";
 import { ShopContext } from "../../context/shop-context";
 
+import "./cart.css";
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
@@ -13,10 +14,10 @@ export const Cart = () => {
 
   return (
     <div className="cart">
-      <div>
+      <div className="title">
         <h1>Your Cart Items</h1>
       </div>
-      <div className="cart">
+      <div className="cartItems">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
             // this is the line that needs modifying, if I increment in the cart, the cartitem is displayed
